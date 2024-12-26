@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  color: #ffffff;
+}
+
+#main {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2.4%;
+  gap: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+.direction {
+  position: relative;
+  color: #111111;
+  background-color: rgba(12, 12, 12, 0.5);
+  border-radius: 5px;
+  height: 36px;
+  width: 100px;
+  justify-content: center;
+  gap: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+#maindir {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 255, 255);
+}
+
+#leftdir,
+#rightdir {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#leftdir {
+  margin-right: 10px;
+}
+
+#rightdir {
+  padding-left: 10px;
+}
+
+#zone,
+#street {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(12, 12, 12, 0.5);
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Icon styles */
+#zone::before {
+  content: "\f3c5"; /* Map marker icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: rgb(0, 255, 255);
+}
+
+#street::before {
+  content: "\f277"; /* Street view icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: rgb(0, 255, 255);
+}

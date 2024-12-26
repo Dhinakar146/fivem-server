@@ -1,8 +1,8 @@
 fx_version "cerulean"
 game "gta5"
-author 'wx / woox'
+author 'dinotoxic'
 version '1.0.0'
-description "Simple NUI Compass, inspired by KKRP 4.1"
+description "Compass and Location Names"
 lua54 "yes"
 
 client_scripts {
